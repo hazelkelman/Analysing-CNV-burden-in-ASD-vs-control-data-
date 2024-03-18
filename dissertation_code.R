@@ -98,7 +98,7 @@ save (cnv_results,file='cnv_results.rda')
 
 # save into tables for statistics 
 load("cnv_results.rda")
-> write.csv(cnv_results$groupResult$`BACKGROUND `, file='cnv_results_BACKGROUND.csv')
-> write.csv(cnv_results$groupResult$CTL, file='cnv_results_CTL.csv')
-> write.csv(cnv_results$groupResult$ASD, file='cnv_results_ASD.csv')
+write.csv(cnv_results$groupResult$`BACKGROUND `, file='cnv_results_BACKGROUND.csv')
+write.csv(cnv_results$groupResult$CTL, file='cnv_results_CTL.csv')
+write.csv(cnv_results$groupResult$ASD, file='cnv_results_ASD.csv')
   
